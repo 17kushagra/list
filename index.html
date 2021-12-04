@@ -26,6 +26,7 @@
         display: flex;
         justify-content: center;
         margin-top: 40px;
+        align-items: center;
     }
     img {
         width: 30px;
@@ -36,7 +37,8 @@
         background: white;
     }
     .mainlist {
-        border-radius: 30px;background-color:rgb(255, 255, 255,0.5);width: 1000px;
+        border-radius: 30px;background-color:rgb(255, 255, 255,0.5);
+        width: 100%;
         margin: auto;
         padding: 20px;
         /* opacity: 0.7; */
@@ -67,6 +69,11 @@
         width: 500px;
         margin:auto;
     }
+    @media screen and (max-width: 768px) {
+.grp {
+flex-direction: column;
+}
+}
    
     
     </style>
@@ -109,7 +116,7 @@
     cols="50"
     placeholder="enter your text here "
     ></textarea>
-    <br />
+    
     <button id="submitbtn"
     
     class="btn click-btn btn-lg active"
@@ -118,6 +125,8 @@
     >CLICK TO ADD</button
     >
 </div>
+<br>
+<br>
 
 <!-- <input type="date" style="width: 200px;" name="date" id="datebyuser"> -->
 
